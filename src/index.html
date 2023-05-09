@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.min.css">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -25,10 +25,27 @@
                 <div class="intro__trial"><span>Try it free 7 days &nbsp</span> then $20/mo. thereafter</div>
                 <div class="intro__form-wrapper">
                     <form action="" class="intro__form">
-                        <input type="text" placeholder="First Name" class="intro__input">
-                        <input type="text" placeholder="Last Name" class="intro__input">
-                        <input type="text" placeholder="Email Address" class="intro__input">
-                        <input type="text" placeholder="Password" class="intro__input">
+
+                        <div class="intro__input-wrap">
+                            <input type="text" id="first" placeholder="First Name" class="intro__input">
+                            <!-- <div class="intro__error">First Name cannot be empty</div> -->
+                        </div>
+
+                        <div class="intro__input-wrap">
+                            <input type="text" id="last" placeholder="Last Name" class="intro__input">
+                            <!-- <div class="intro__error">Last Name cannot be empty</div> -->
+                        </div>
+
+                        <div class="intro__input-wrap">
+                            <input type="email" id="email" placeholder="Email Address" class="intro__input">
+                            <!-- <div class="intro__error">Looks like this is not an email</div> -->
+                        </div>
+
+                        <div class="intro__input-wrap">
+                            <input type="password" id="password" placeholder="Password" class="intro__input">
+                            <!-- <div class="intro__error">Password cannot be empty</div> -->
+                        </div>
+
                         <button class="btn">Claim your free trial</button>
                     </form>
                     <div class="intro__agreement">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></div>
@@ -37,15 +54,7 @@
         </div>
     </div>
 
-  <!-- 
-
-  
-
-
-
-  
-
-  -->
+  <script src="js/script.js"></script>
   
 </body>
 </html>
