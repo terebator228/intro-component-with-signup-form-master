@@ -1,0 +1,35 @@
+@media (max-width: 1120px) {
+    .intro {
+        &__left-side {
+            margin-left: 20px;
+        }
+        
+    }
+}
+
+@media (max-width: 760px) {
+    .intro {
+        &__left-side {
+            margin-left: 10px;
+        }
+        &__right-side {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .intro {
+        flex-direction: column;
+        &__left-side {
+            margin: 0 auto;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__trial {
+            margin-top: 70px;
+        }
+    }
+}
+
